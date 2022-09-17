@@ -39,14 +39,25 @@
 //}
 
 // Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)
-Console.Write("Введите проверяемое число - ");
+//Console.Write("Введите проверяемое число - ");
+//int a = Convert.ToInt32(Console.ReadLine());
+//bool z = Convert.ToBoolean(a%2);
+//if (z==true)
+//{
+//    Console.WriteLine(a + " нечетное число");
+//}
+//else
+//{
+//    Console.WriteLine(a + " четное число");
+//}
+
+
+//Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N
+Console.Write("Введите число - ");
 int a = Convert.ToInt32(Console.ReadLine());
-bool z = Convert.ToBoolean(a%2);
-if (z==true)
+int b = 2;
+while (b < a)
 {
-    Console.WriteLine(a + " нечетное число");
-}
-else
-{
-    Console.WriteLine(a + " четное число");
+    Console.WriteLine($"{b}, ");
+    b = b + 2;
 }
