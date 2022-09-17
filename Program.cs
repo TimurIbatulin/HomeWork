@@ -14,26 +14,39 @@
 
 
 //Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел
-Console.Write("Введите первое число - ");
+//Console.Write("Введите первое число - ");
+//int a = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Введите второе число - ");
+//int b = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Введите третье число - ");
+//int c = Convert.ToInt32(Console.ReadLine());
+//int d = 0;
+//if (a > b)
+//{
+//d = a;
+//}
+//else
+//{
+//    d = b;
+//}
+//if (d > c)
+//{
+//    Console.WriteLine("Максимальное из трех чисел - " + d);
+//}
+//else
+//{
+//     Console.WriteLine("Максимальное из трех чисел - " + c);
+//}
+
+// Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)
+Console.Write("Введите проверяемое число - ");
 int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите второе число - ");
-int b = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите третье число - ");
-int c = Convert.ToInt32(Console.ReadLine());
-int d = 0;
-if (a > b)
+bool z = Convert.ToBoolean(a%2);
+if (z==true)
 {
-d = a;
+    Console.WriteLine(a + " нечетное число");
 }
 else
 {
-    d = b;
-}
-if (d > c)
-{
-    Console.WriteLine("Максимальное из трех чисел - " + d);
-}
-else
-{
-     Console.WriteLine("Максимальное из трех чисел - " + c);
+    Console.WriteLine(a + " четное число");
 }
